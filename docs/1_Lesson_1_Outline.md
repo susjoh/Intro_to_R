@@ -1,0 +1,119 @@
+
+# Using R as a Research Tool
+NERC E3 DTP
+Susan Johnston, Gergana Daskalova, John Godlee
+
+
+
+# What is R and what is it used for?
+
+* Language and environment for statistical computing and graphics
+* Processing and tidying data
+* Reproducible and Portable Research
+* Data visualisation
+* Generating reports
+* Presentations
+* Applications
+
+
+
+### Examples of R in use around Edinburgh
+
+https://scotland.shinyapps.io/babynames/
+http://ssi.globalsurg.org/
+https://www.thedatalab.com/what-we-do
+
+Riinu's Shiny App
+Genome-wide association studies
+Snowfall in the UK
+Machine learning
+Data Lab
+
+Who uses R? RBS, Rockstar North, Facebook, Google, Scottish Government, Skyscanner, Tesco Bank.
+Time invested in learning to code pays off - *do it.*
+
+
+## Why learn R?
+
+* Lingua Franca of Data Science
+* Efficient, Accurate and Reproducible.
+* With R, there is no if, only how.
+* There's a library for everything.
+* You can write a library to do anything.
+* Highly desirable transferable skill
+
+
+### Efficiency and Accuracy
+
+Stop clicking and start typing.
+
+Can you repeat all of this again...
+... and would you get the same results every time?
+
+
+### Reproducibility
+
+``*Reproducibility* is the ability of an entire experiment or study to be reproduced, either by the researcher or by someone else working independently, [and] is one of the main principles of the scientic method.''
+-Wikipedia
+
+#### Scenarios that benefit from reproducibility
+
+The first researcher who will
+need to reproduce the results is likely to be YOU.
+
+* New raw data becomes available.
+* You return to the project after a period of time.
+* Project gets handed to new PhD student/postdoc.
+* Working collaboratively.
+* A reviewer wants you to change a model parameter.
+* When you find an error, but not sure where you went wrong.
+
+
+## WHo can code in R?
+
+A N Y O N E
+
+None of the people running this course have any background in computer science.
+There are many ways to the same solution
+Write code to get the job done - doesn't have to be the best, so long as it works.
+
+
+## The RStudio Environment
+
+
+## How to find help in R
+
+Your past self: Keep a document of commonly used functions and solutions
+Stackoverflow
+OurCodingClub
+RStudio CheatSheets
+Nice R Code
+Colleagues
+
+
+
+# PRACTICAL
+
+
+# Set up the working environment
+
+
+
+# Load data
+
+
+
+# Manage data
+
+
+
+# Visualise data
+
+
+
+
+
+# Generate a report
+
+
+
