@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.17)  1 NOV 2017 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.17)  1 NOV 2017 17:24
 entering extended mode
 **./3_Course_Notes-knitr.tex
 (3_Course_Notes-knitr.tex
@@ -551,7 +551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
-<figs/R_Studio.png, id=59, 963.6pt x 513.92pt>
+<figs/R_Studio.png, id=63, 963.6pt x 513.92pt>
 File: figs/R_Studio.png Graphic file (type png)
  <use figs/R_Studio.png>
 Package pdftex.def Info: figs/R_Studio.png used on input line 143.
@@ -621,7 +621,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
-<figs/Import_Dataset2.JPG, id=82, 520.51607pt x 430.60875pt>
+<figs/Import_Dataset2.JPG, id=86, 520.51607pt x 430.60875pt>
 File: figs/Import_Dataset2.JPG Graphic file (type jpg)
 
 <use figs/Import_Dataset2.JPG>
@@ -637,25 +637,65 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+Overfull \hbox (29.3491pt too wide) in paragraph at lines 289--290
+[]\T1/zgmx/m/n/12 We rec-om-mend that in-stead of []\T1/aett/m/n/12 read.delim(
+)[]\T1/zgmx/m/n/12 , that you use ei-ther []\T1/aett/m/n/12 read.table()[] \T1/
+zgmx/m/n/12 or []\T1/aett/m/n/12 read.csv()[]\T1/zgmx/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
 
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [6 <./figs/Import_Dataset2.JPG>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 336.
+
+Overfull \vbox (21.68121pt too high) has occurred while \output is active []
+
+
+[7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
  (3_Course_Notes-knitr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
 Package rerunfilecheck Info: File `3_Course_Notes-knitr.out' has not changed.
-(rerunfilecheck)             Checksum: 32ADA465F342C71DE53435D5DC50EC79;694.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
+(rerunfilecheck)             Checksum: FC4F0997BB01670FD5B72F5F17863D6D;745.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 336.
  ) 
 Here is how much of TeX's memory you used:
- 8376 strings out of 493333
- 120581 string characters out of 3139184
+ 8379 strings out of 493333
+ 120607 string characters out of 3139184
  211171 words of memory out of 3000000
- 11726 multiletter control sequences out of 15000+200000
+ 11727 multiletter control sequences out of 15000+200000
  60466 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,6n,35p,994b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -667,9 +707,9 @@ ublic/garamondx/NewG8-Ita.pfb><C:/Users/sjohns10/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/garamondx/NewG8-Reg.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsltt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on 3_Course_Notes-knitr.pdf (6 pages, 487450 bytes).
+Output written on 3_Course_Notes-knitr.pdf (7 pages, 491148 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

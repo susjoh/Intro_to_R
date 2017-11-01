@@ -239,7 +239,7 @@ will search all help files and return a list of those that match. \\\\
 
 
 %-------------------------------------------
-\section {Loading and Preparing Data.}
+\section{Loading data into R.}
 %--------------------------------------------
 
 Now that we are familiar with the RStusio environment, it's time to start working with real data. \\
@@ -285,6 +285,50 @@ You should now have the following code in your script:
 \end{Sinput}
 \end{Schunk}
 \end{shaded}
+
+We recommend that instead of \code{read.delim()}, that you use either \code{read.table()} or \code{read.csv()}, as they offer more flexibility on defining various features about the input files. \\\\
+
+
+\fbox{\begin{minipage}{36em}
+\Large{\textbf{Exercise 3.}}
+\\
+
+\normalsize
+Using \code{?}, find the help page for \code{read.table}. Read the file \texttt{Peru\_Soil\_Data.txt} into R. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
+
+\end{minipage}}
+
+%-------------------------------------------
+\section{Data management in R.}
+%--------------------------------------------
+
+Exploring and manipulating data is fundamental to data analysis. In this section, we will briefly cover how to sort and filter the soil dataset. There are several approaches to doing this in the base code of R, but here we will use on the functions \code{select()}, \code{filter()} and \code{arrange()} from the package \texttt{dplyr}. \\
+
+First, we need to load the \texttt{dplyr} package.
+
+\begin{shaded}
+\begin{Schunk}
+\begin{Sinput}
+> library(dplyr)
+\end{Sinput}
+\end{Schunk}
+\end{shaded}
+
+\fbox{\begin{minipage}{36em}
+NB. Some of you may get an error message:\\
+\code{Error in library(dplyr) : there is no package called `dplyr'} \\
+
+In this case, the library has to be installed from CRAN. This can be done by typing \code{install.packages("dplyr")}. It may ask you to select a mirror - select the RStudio Global mirror, or one that which is geographically closest to you. \\
+
+\end{minipage}}
+
+
+
+
+
+
+
+
 
 
 
