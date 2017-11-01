@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.17)  1 NOV 2017 00:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.17)  1 NOV 2017 13:21
 entering extended mode
 **./3_Course_Notes-knitr.tex
 (3_Course_Notes-knitr.tex
@@ -363,6 +363,24 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen120
 \FrameSep=\dimen121
 )
+(C:\Users\sjohns10\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip48
+\aftertitleunit=\skip49
+\ttl@plus=\dimen122
+\ttl@minus=\dimen123
+\ttl@toksa=\toks20
+\titlewidth=\dimen124
+\titlewidthlast=\dimen125
+\titlewidthfirst=\dimen126
+)
+(C:\Users\sjohns10\AppData\Roaming\MiKTeX\2.9\tex\latex\titling\titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip50
+\thanksmargin=\skip51
+\droptitle=\skip52
+)
 (C:/PROGRA~1/R/R-33~1.2/share/texmf/tex/latex\Sweave.sty
 Package: Sweave 
 
@@ -376,7 +394,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 <2008/02/07> (tvz)
 \FV@CodeLineNo=\count111
 \FV@InFile=\read1
-\FV@TabBox=\box28
+\FV@TabBox=\box29
 \c@FancyVerbLine=\count112
 \FV@StepNumber=\count113
 \FV@OutFile=\write3
@@ -402,7 +420,7 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ))))
-LaTeX Font Info:    Try loading font information for T1+zgmx on input line 42.
+LaTeX Font Info:    Try loading font information for T1+zgmx on input line 52.
 
 (C:\Users\sjohns10\AppData\Roaming\MiKTeX\2.9\tex\latex\garamondx\t1zgmx.fd
 File: t1zgmx.fd 2012/10/29 Fontinst v1.933 font definitions for T1/zgmx.
@@ -410,41 +428,41 @@ File: t1zgmx.fd 2012/10/29 Fontinst v1.933 font definitions for T1/zgmx.
 (3_Course_Notes-knitr.aux)
 \openout1 = `3_Course_Notes-knitr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    ... okay on input line 52.
 
 (C:\Users\sjohns10\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
-\scratchdimen=\dimen122
-\scratchbox=\box29
+\scratchdimen=\dimen127
+\scratchbox=\box30
 \nofMPsegments=\count115
 \nofMParguments=\count116
-\everyMPshowfont=\toks20
+\everyMPshowfont=\toks21
 \MPscratchCnt=\count117
-\MPscratchDim=\dimen123
+\MPscratchDim=\dimen128
 \MPnumerator=\count118
 \makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks21
+\everyMPtoPDFconversion=\toks22
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -458,8 +476,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 42.
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 52.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -469,9 +487,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
 
 (3_Course_Notes-knitr.out) (3_Course_Notes-knitr.out)
 \@outlinefile=\write4
@@ -481,23 +499,23 @@ LaTeX Info: Redefining \nameref on input line 42.
 \c@mv@boldtabular=\count122
 
 (3_Course_Notes-knitr-concordance.tex)
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 82.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 92.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-LaTeX Font Info:    Try loading font information for TS1+zgmx on input line 91.
-
+LaTeX Font Info:    Try loading font information for TS1+zgmx on input line 101
+.
 
 (C:\Users\sjohns10\AppData\Roaming\MiKTeX\2.9\tex\latex\garamondx\ts1zgmx.fd
 File: ts1zgmx.fd 2012/11/16 Fontinst v1.933 font definitions for TS1/zgmx.
@@ -508,36 +526,51 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 [1
 
 {C:/Users/sjohns10/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Overfull \hbox (11.06728pt too wide) in paragraph at lines 137--139
+\T1/zgmx/m/n/12 Open \T1/aett/m/n/12 In-tro_to_R.RProj \T1/zgmx/m/n/12 and open
+ the ex-am-ple R Script (\T1/aett/m/n/12 File > Open File... > 1_Ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
 <figs/R_Studio.png, id=59, 963.6pt x 513.92pt>
 File: figs/R_Studio.png Graphic file (type png)
  <use figs/R_Studio.png>
-Package pdftex.def Info: figs/R_Studio.png used on input line 122.
+Package pdftex.def Info: figs/R_Studio.png used on input line 143.
 (pdftex.def)             Requested size: 492.88388pt x 262.87206pt.
 
-Overfull \hbox (44.8101pt too wide) in paragraph at lines 122--123
+Overfull \hbox (44.8101pt too wide) in paragraph at lines 143--144
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
-
- []
-
-
-Overfull \vbox (21.68121pt too high) has occurred while \output is active []
-
-
-[2 <./figs/R_Studio.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
@@ -545,43 +578,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--135
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Overfull \vbox (21.68121pt too high) has occurred while \output is active []
+
+
+[3 <./figs/R_Studio.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+
+ []
+
 
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+<figs/Import_Dataset2.JPG, id=82, 520.51607pt x 430.60875pt>
+File: figs/Import_Dataset2.JPG Graphic file (type jpg)
+
+<use figs/Import_Dataset2.JPG>
+Package pdftex.def Info: figs/Import_Dataset2.JPG used on input line 254.
+(pdftex.def)             Requested size: 358.46039pt x 296.5487pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Overfull \vbox (21.68121pt too high) has occurred while \output is active []
+
+
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+
+Overfull \vbox (21.68121pt too high) has occurred while \output is active []
+
+
+[6 <./figs/Import_Dataset2.JPG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
  (3_Course_Notes-knitr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
 Package rerunfilecheck Info: File `3_Course_Notes-knitr.out' has not changed.
-(rerunfilecheck)             Checksum: D01B06126A287B1545CE3444D57A1F15;710.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
+(rerunfilecheck)             Checksum: 32ADA465F342C71DE53435D5DC50EC79;694.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
  ) 
 Here is how much of TeX's memory you used:
- 8044 strings out of 493333
- 116139 string characters out of 3139184
- 204397 words of memory out of 3000000
- 11407 multiletter control sequences out of 15000+200000
+ 8376 strings out of 493333
+ 120581 string characters out of 3139184
+ 211171 words of memory out of 3000000
+ 11726 multiletter control sequences out of 15000+200000
  60466 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,6n,35p,994b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,6n,35p,994b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/sjohns10/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/garamondx/zgm_t
 s1.enc}{C:/Users/sjohns10/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/garamondx/
 zgmt1.enc}<C:/Users/sjohns10/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/gara
@@ -590,9 +667,9 @@ ublic/garamondx/NewG8-Ita.pfb><C:/Users/sjohns10/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/garamondx/NewG8-Reg.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsltt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on 3_Course_Notes-knitr.pdf (4 pages, 202445 bytes).
+Output written on 3_Course_Notes-knitr.pdf (6 pages, 487450 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
