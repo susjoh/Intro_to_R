@@ -49,9 +49,10 @@
 \newcommand\code[1]{\textcolor{red}{\texttt{#1}}}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 \definecolor{shadecolor}{gray}{0.95} %this is defining the color of the background in the shaded environment
 
-\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
 
 <<include=FALSE, echo = F>>=
 library(knitr)
@@ -66,7 +67,7 @@ concordance=TRUE
 %------------------------------------------------------------
 \author{Susan Johnston: \href{mailto:Susan.Johnston@ed.ac.uk}{Susan.Johnston@ed.ac.uk}  \\ \\
         Demonstrators: Gergana Dalaskova, John Godlee. \\
-        Hat-Tips to Kyle Dexter and The Coding Club.}
+        Hat-Tips to Kyle Dexter, The Coding Club and R4all.}
 %\date{}
 
 
@@ -292,6 +293,10 @@ Peru_Soil_Data <- read.delim("data/Peru_Soil_Data.txt")
 @
 \end{shaded}
 
+<<eval = T, echo = F>>=
+Peru_Soil_Data <- read.delim("../data/Peru_Soil_Data.txt")
+@
+
 We recommend that instead of \code{read.delim()}, that you use either \code{read.table()} or \code{read.csv()}, as they offer more flexibility on defining various features about the input files. \\\\
 
 
@@ -302,13 +307,17 @@ We recommend that instead of \code{read.delim()}, that you use either \code{read
 \normalsize
 Using \code{?}, find the help page for \code{read.table}. Read the file \texttt{Peru\_Soil\_Data.txt} into R. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
 
-\end{minipage}}
+\end{minipage}}\\
+
+{ }
+The object \texttt{Peru\_Soil\_Data} is a type of object known as a data frame. You can explore the data visually by clicking on its entry in the Environment tab. Alternatively, there are functions in base R that are good for telling you what your data look like. For data frames, these include \code{head()} and \code{str()}. Try these out.
+
 
 %-------------------------------------------
 \section{Data management in R.}
 %--------------------------------------------
 
-Exploring and manipulating data is fundamental to data analysis. In this section, we will briefly cover how to sort and filter the soil dataset. There are several approaches to doing this in the base code of R, but here we will use on the functions \code{select()}, \code{filter()} and \code{arrange()} from the package \texttt{dplyr}. \\
+Exploring and manipulating data is fundamental to data analysis. In this section, we will briefly cover how to sort and filter the soil dataset. There are several approaches to doing this in the base code of R, but here we will use on the functions \code{select()}, \code{filter()} and \code{arrange()} from the package \textbf{\texttt{dplyr}}. \\
 
 First, we need to load the \texttt{dplyr} package. It is good practise to do this at the beginning of the script when you are setting up the working environment.
 
@@ -326,16 +335,141 @@ In this case, the library has to be installed from CRAN. This can be done by typ
 
 \end{minipage}}
 
+\subsection{Summary Statistics.}
+
+Functions such as \code{head()} and \code{str()} are useful to telling you what your data look like, but don't give much information on what the data say.\\
+
+A versatile function for exploring objects is \code{summary()}. This function summarises each numeric column in terms of the median, mean, interquartile range, minimum and maximum. It also provides information on levels and sample sizes for categorical variables. 
+
+\begin{shaded}
+<<>>=
+summary(Peru_Soil_Data)
+@
+\end{shaded}
+
+\subsection{Sorting data with \code{arrange()}}
+
+There are occasions where it is useful to have sorted data, either because we would like to examine it, or for some types of statistical analyses i.e. with time-series data. The \code{arrange()} function sorts data frames as so:
+
+\begin{shaded}
+<<eval = F>>=
+# sort by Soil pH value:
+arrange(Peru_Soil_Data, Soil_pH) 
+
+# sort by decreasing Soil pH value:
+arrange(Peru_Soil_Data, -Soil_pH) 
+
+# sort by habitat and then soil pH within habitat:
+arrange(Peru_Soil_Data, Habitat, Soil_pH) 
+@
+\end{shaded}
 
 
+\subsection{Subsetting columns with \code{select()}}
+
+At its simplest, columns can be selected using their numeric references in square brackets (\textbf{after} the comma):
+
+\begin{shaded}
+<<eval = F>>=
+Peru_Soil_Data[,1]
+Peru_Soil_Data[,3:5]
+Peru_Soil_Data[,c(1, 4, 5)]
+@
+\end{shaded}
+
+It is not always recommended to use numerical references, as addition or removal of columns can change the numbers, leading to mistakes. The best solution is to use the column names themselves. A convenient way to do this is to used the \texttt{dplyr} \code{select()} function, will select or remove columns of the data. Try running:
+
+\begin{shaded}
+<<eval = F>>=
+select(Peru_Soil_Data, River_Basin)
+select(Peru_Soil_Data, -River_Basin)
+@
+\end{shaded}
+
+More than one column can be selected or removed by adding more column names:
+
+\begin{shaded}
+<<eval = F>>=
+select(Peru_Soil_Data, River_Basin, Magnesium, Sodium)
+select(Peru_Soil_Data, -River_Basin, -Magnesium, -Sodium)
+@
+\end{shaded}
+
+\subsection{Adding columns.}
+
+New columns can be added to the data containing information or calculations that you are interested in. We can do this in standard base R using the code \code{\$}, which can be used to call existing variables from a data frame. For example, river basin can be called as so:
+
+\begin{shaded}
+<<>>=
+Peru_Soil_Data$River_Basin
+@
+\end{shaded}
+
+Columns can be added by creating new variables within the data frame. Here, we can create a new column called log\_Calcium which takes the $log_{10}$ of the calcium column:
+
+\begin{shaded}
+<<eval = T>>=
+Peru_Soil_Data$log_Calcium <- log10(Peru_Soil_Data$Calcium)
+head(select(Peru_Soil_Data, Site, Calcium, log_Calcium))
+@
+\end{shaded}
+
+\subsection{Subsetting rows with \code{filter()}}
+
+Subsetting data by rows is one of the most common tasks carried out in data manipulation steps. Again, at it's simplest, rows can be selected using their numeric references in square brackets (\textbf{before} the comma):
+
+\begin{shaded}
+<<eval = F>>=
+Peru_Soil_Data[1,]
+Peru_Soil_Data[1:5,]
+@
+\end{shaded}
+
+However, this is clearly not useful if we wish to select rows based on a particular criteria. For this, we can used the \code{filter()} function, specifying an argument with the following logical operators:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{cl}
+		
+		Operator & Function \\ \hline
+		$\textless$ & less than \\
+		$\textgreater$ & greater than\\
+		$=\textless$ & less than or equal to\\
+		$=\textgreater$ & greater than or equal to\\
+		$==$ & equals \\
+		$!=$ & does not equal \\
+		$\%in\%$ & matches \\
+
+	\end{tabular}
+	 
+	\label{tbl:Boolean}
+\end{table}
+
+For examples, in the soil data, we may wish to select only rows for the floodplain habitat and the Los Amigos River Basin:
+
+\begin{shaded}
+<<eval = F>>=
+filter(Peru_Soil_Data, Habitat == "floodplain", River_Basin == "Manu")
+@
+\end{shaded}
+
+\fbox{\begin{minipage}{36em}
+\Large{\textbf{Exercise 4.}}
+
+\normalsize
+\begin{enumerate}
+
+\item Create a new data frame, Peru\_Upland\_Soil, which includes row only from upland habitats.
+\item Edit this data frame so that it only includes data from the Manu and Los Amigos river basins (Hint: use $\%in\%$)
+\item Edit this data frame again so that it is sorted by increasing Calcium levels.
+\item Create a new column called Sum\_Ca\_Mg that is the sum of the calcium and magnesium columns.
 
 
+\end{enumerate}
+\end{minipage}}
 
 
-
-
-
-
+\section{Data visualisation with \texttt{ggplot2}}
 
 
 \end{document}
