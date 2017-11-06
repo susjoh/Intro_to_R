@@ -35,6 +35,7 @@ sort(y, decreasing = T)
 #----------------------------------------
 
 library(dplyr)
+library(ggplot2)
 
 #----------------------------------------
 # 2. Load data
@@ -108,5 +109,70 @@ Peru_Upland_Soil$Sum_Ca_Mg <- Peru_Upland_Soil$Calcium + Peru_Upland_Soil$Magnes
 # 4. Visualise data
 #----------------------------------------
 
+# histogram
+hist(Peru_Soil_Data$Calcium)
+
+# plot
+plot(Magnesium ~ Calcium, data = Peru_Soil_Data, col = "red")
+
+# boxplot
+boxplot(Magnesium ~ River_Basin, data = Peru_Soil_Data)
+
+# Running ggplot2
+
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium))
+
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium)) + 
+  geom_point()
+
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium)) + 
+  geom_point() + 
+  stat_smooth(method = "lm")
+
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium, col = Habitat)) + 
+  geom_point() + 
+  stat_smooth(method = "lm")
+
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium, col = Habitat)) +
+  geom_point() +
+  stat_smooth(method = "lm") +
+  labs(x = "Ca", y = "Mg", col = "Habitat Type") +
+  scale_y_continuous(breaks = seq(0, 2500, 250)) +
+  facet_wrap(~Habitat) +
+  scale_colour_manual(values = c("red", "blue")) +
+  theme(legend.position = "top")
+
+ggsave("Habitat_Ca_Mg.png", width = 12, height = 8, units = "cm", dpi = 300)
 
 
+# Exercise 5
+
+# 1
+
+ggplot(Peru_Soil_Data, aes(Calcium, Potassium, colour = Soil_pH)) +
+  geom_point()
+
+# 2
+
+ggplot(Peru_Soil_Data, aes(River_Basin, Soil_pH)) +
+  geom_boxplot() +
+  facet_wrap(~Habitat)
+
+# 3
+
+ggplot(Peru_Soil_Data, aes(Site, Sodium)) +
+  geom_col()
+
+# 4
+
+ggplot(Peru_Soil_Data, aes(Site, Sodium, fill = River_Basin)) +
+  geom_col()
+
+# DRAW A MAP
+
+library(ggthemes)
+library(maps)
+
+ggplot(data, aes(x = longitude, y = latitude)) +
+  borders("world", colour = "black", fill = "grey80") +
+  theme_map()
