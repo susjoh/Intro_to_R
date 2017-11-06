@@ -7,8 +7,8 @@
 \usepackage{amsfonts}
 \usepackage{garamondx}
 \usepackage{framed}  %This is to use the shaded environment
-
 \usepackage{titlesec}
+
 
 \titlespacing*{\section}
 {0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
@@ -76,7 +76,7 @@ concordance=TRUE
 <<include=FALSE, echo = F>>=
 library(knitr)
 opts_chunk$set(
-highlight=TRUE, tidy=TRUE, keep.space=TRUE, keep.blank.space=FALSE, keep.comment=TRUE
+highlight=TRUE, tidy=TRUE, keep.space=TRUE, keep.blank.space=FALSE, keep.comment=TRUE, fig = TRUE
 )
 @
 
@@ -121,40 +121,33 @@ Almost anything is possible in \boldblue{R}. It is fast becoming the \textit{lin
 \item Data visualistion (\texttt{ggplot})
 \item Creating interactive web applications (\texttt{shiny})
 \item Generating reports and presentations (\texttt{knitr}, \texttt{slidify})
-\item Creating portable projects (RStudio Projects)
+\item Creating portable projects (\boldblue{RStudio} Projects)
 \end{itemize}
 
 The analytical power of \boldblue{R} lies in its many packages (11,172 at the time of writing). At least 300 of these are written for ecologists and evolutionary biologists. A list of packages are hosted on the Comprehensive R Archive Network (known as \textbf{CRAN}): \url{https://cran.r-project.org/}.
 
-% \subsection {What we hope to achieve in this session.}
-% 
-% Before beginning this course, we asked you to complete the 
-
 
 %-------------------------------------------
-\section {Getting Started: R and the RStudio Environment.}
+\section {Getting Started: \boldblue{R} and the \boldblue{RStudio} Environment.}
 %--------------------------------------------
-\subsection {Installing R and RStudio.}
+\subsection {Installing \boldblue{R} and \boldblue{RStudio}}
 
-R can be downloaded from the CRAN website. Whilst the CRAN download version provides a simple user interface, we recommend that R is run through the software RStudio. This is open-source, free, and available at \url{http://www.rstudio.com/}. [NB. It is important to install R first and RStudio second.]
-
-
-\subsection {Creating an R Project.}
-
-Using R Projects (\texttt{.RProj}) is not necessary, but we strongly recommend that you use them. The advantage using R Projects is that it allows easier file imports, improved reproducibility and collaboration. This is primarily because it tells R where to look for data files and scripts, meaning that a script can be run on machine to another without any problems. \\
-
-We have provided you with the project \texttt{Intro\_to\_R.RProj}. Opening this file will open RStudio. On the Files tab in the lower right corner, you will see the files in the current working directory. This will be useful later when we tell R to load files. You can check the working directory by typing \code{getwd()}. \\
-
-If you would rather not use projects, you can set the working directory by using the command \code{setwd()} or by selecting \texttt{Session > Set working directory > Choose directory}. \\
-
-Creating an R Project is straightforward: select \texttt{File > New Project} and follow the instructions.
+\boldblue{R} can be downloaded from the CRAN website. Whilst the CRAN download version provides a simple user interface, we recommend that \boldblue{R} is run through the software \boldblue{RStudio} This is open-source, free, and available at \url{http://www.rstudio.com/}.
 
 
-\subsection {Using RStudio.}
+\subsection {Creating an \boldblue{R} Project.}
 
-Open \texttt{Intro\_to\_R.RProj} and open the example R Script (\texttt{File > Open File... > 1\_Example\_Script}). RStudio should look something like Figure \ref{fig:R_Studio}. 
+We strongly recommend that you use \boldblue{R} Projects (\texttt{.RProj}). Using Projects allows easier file imports, improved reproducibility and collaboration. This is primarily because it tells \boldblue{R} where to look for data files and scripts, meaning that a script can be run different machines and environments without any problems. We have provided you with the project \texttt{Intro\_to\_R.RProj}. Opening this file will open \boldblue{RStudio}. If you would rather not use projects, you can set the working directory by using the command \code{setwd()} or by selecting \texttt{Session > Set working directory > Choose directory}. \\
+
+On the Files tab in the lower right corner, you will see the files in the current working directory. This will be useful later when we tell \boldblue{R} to load files. You can check the working directory by typing \code{getwd()}.
+
+%Creating an \boldblue{R} Project is straightforward: select \texttt{File > New Project} and follow the instructions.
+
+
+\subsection {Using \boldblue{RStudio}}
+
+Open \texttt{Intro\_to\_R.RProj} and open the example \boldblue{R} Script (\texttt{File > Open File... > 1\_Example\_Script}). \boldblue{RStudio} should look something like Figure \ref{fig:R_Studio}. 
 \\
-
 
 \begin{figure}[h]
 	\centering 
@@ -163,21 +156,18 @@ Open \texttt{Intro\_to\_R.RProj} and open the example R Script (\texttt{File > O
 	\label{fig:R_Studio}
 \end{figure} 
 
-On the lower left is the \textit{Console} pane - this is the engine of R. You can give instructions to R by directly typing at the prompt (\code{>}). 
-\\
+On the \textbf{lower left} is the \textit{Console} pane - this is the engine of \boldblue{R}. You can give instructions to \boldblue{R} by directly typing at the prompt (\code{>}). \\
 
-On the upper left is your R Script - here, you can write commands and send them to the console by clicking ``\texttt{Run}'' or by typing \code{Ctrl-Enter} (or \code{Cmd-Enter}). Notice that all lines are preceded by \code{\#} - this is the comment character in R.
-\\
+On the \textbf{upper left} is your \boldblue{R} Script - here, you can write commands and send them to the console by clicking ``\texttt{Run}'' or by typing \code{Ctrl-Enter} (or \code{Cmd-Enter}). Notice that all lines are preceded by \code{\#} - this is the comment character in \boldblue{R}. \\
 
-On the lower right, you can browse the packages installed on your machine, open files and search R Help. This pane will also show plots when we run them later in the practical.
+On the \textbf{lower right}, you can browse the packages installed on your machine, open files and search \boldblue{R} Help. This pane will also show plots when we run them later in the practical.
 \\
-
 
 \fbox{\begin{minipage}{36em}
 \Large{\textbf{Exercise 1.}}
 
 \normalsize
-Try running some basic commands directly in the console and from the R Script:
+Try running some basic commands directly in the console and from the \boldblue{R} Script:
 \end{minipage}}
 
 
@@ -207,9 +197,9 @@ y
 
 You can see that in the upper right pane, we can see this new objects \code{x} and \code{y} in the environment.
 
-\subsection {Finding Help within R.}
+\subsection {Finding Help within \boldblue{R}.}
 
-The fastest way to find help in R is to search using \code{?}. For example:
+The fastest way to find help in \boldblue{R} is to search using \code{?}. For example:
 
 \begin{shaded}
 <<eval = F>>=
@@ -240,30 +230,30 @@ will search all help files and return a list of those that match. \\\\
 \end{minipage}}
 
 
-\subsection {Troubleshooting and finding help outside of R.}
+\subsection {Troubleshooting and finding help outside of \boldblue{R}.}
 
 \begin{itemize}
 \item Coding Club Tutorials \& Useful Links \url{https://ourcodingclub.github.io/}
 \item Stack Overflow \url{https://stackoverflow.com/}: Try searching with the tag [R]
-\item RStudio Cheatsheets \url{https://www.rstudio.com/resources/cheatsheets/}
+\item \boldblue{RStudio} Cheatsheets \url{https://www.rstudio.com/resources/cheatsheets/}
 \end{itemize}
 
 
 %-------------------------------------------
-\section{Loading data into R.}
+\section{Loading data into \boldblue{R}.}
 %--------------------------------------------
 
-Now that we are familiar with the RStusio environment, it's time to start working with real data. \\
+Now that we are familiar with the \boldblue{RStudio} environment, it's time to start working with real data. \\
 
 In the folder \texttt{data}, you have been provided with a single dataset on Peruvian Soil in two common formats - \texttt{.txt} (tab-delimited) and \texttt{.csv} (comma-delimited). \\
 
-The easiest way to read the data into R is to use the \texttt{Import dataset} button in the Environment tab, selecting \texttt{From Text (base)...} and choosing either datafile (\texttt{.txt} or \texttt{.csv}). A box will appear (Figure \ref{fig:Import_Dataset2}). Check each of the options that applies to the data (i.e. change nothing) and click ``\texttt{Import}''. You will notice that the object \texttt{Peru\_Soil\_Data} is now in the R environment, but you may also have noticed a command appearing in the Console: \\
+The easiest way to read the data into \boldblue{R} is to use the \texttt{Import dataset} button in the Environment tab, selecting \texttt{From Text (base)...} and choosing either data file (\texttt{.txt} or \texttt{.csv}). A box will appear (Figure \ref{fig:Import_Dataset2}). Check each of the options that applies to the data (i.e. change nothing) and click ``\texttt{Import}''. You will notice that the object \texttt{Peru\_Soil\_Data} is now in the \boldblue{R} environment, but you may also have noticed a command appearing in the Console: \\
 
 
 \begin{figure}[t]
 	\centering 
 	\includegraphics[width=0.8\textwidth]{figs/Import_Dataset2.JPG}
-	\caption{Importing data manually into R}
+	\caption{Importing data manually into \boldblue{R}}
 	\label{fig:Import_Dataset2}
 \end{figure} 
 
@@ -279,7 +269,7 @@ Peru_Soil_Data.txt")
 
 This command can be copied and pasted into your script, which would save you from clicking the next time. However, providing such a long path if problematic - if you were to rename one of the directories, or move the folder somewhere else, then the code would no longer work. \\
 
-RProjects provide the solution to this. Try typing the following into your script, and guiding the command to the data file using the \texttt{Tab} key:
+\boldblue{R} Projects provide the solution to this. Try typing the following into your script, and guiding the command to the data file using the \texttt{Tab} key:
 
 \begin{shaded}
 \texttt{Peru\_Soil\_Data <- read.delim("}
@@ -305,21 +295,22 @@ We recommend that instead of \code{read.delim()}, that you use either \code{read
 \\
 
 \normalsize
-Using \code{?}, find the help page for \code{read.table}. Read the file \texttt{Peru\_Soil\_Data.txt} into R. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
+Using \code{?}, find the help page for \code{read.table}. Read the file \texttt{Peru\_Soil\_Data.txt} into \boldblue{R}. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
 
-\end{minipage}}\\
+\end{minipage}}
 
-{ }
-The object \texttt{Peru\_Soil\_Data} is a type of object known as a data frame. You can explore the data visually by clicking on its entry in the Environment tab. Alternatively, there are functions in base R that are good for telling you what your data look like. For data frames, these include \code{head()} and \code{str()}. Try these out.
+
+{.}\\\\
+The object \texttt{Peru\_Soil\_Data} is a type of object known as a data frame. You can explore the data visually by clicking on its entry in the Environment tab. Alternatively, there are functions in base \boldblue{R} that are good for telling you what your data look like. For data frames, these include \code{head()} and \code{str()}. Try these out.
 
 
 %-------------------------------------------
-\section{Data management in R.}
+\section{Data management in \boldblue{R}.}
 %--------------------------------------------
 
-Exploring and manipulating data is fundamental to data analysis. In this section, we will briefly cover how to sort and filter the soil dataset. There are several approaches to doing this in the base code of R, but here we will use on the functions \code{select()}, \code{filter()} and \code{arrange()} from the package \textbf{\texttt{dplyr}}. \\
+Exploring and manipulating data is fundamental to data analysis. In this section, we will briefly cover how to sort and filter the soil dataset. There are several approaches to doing this in the base code of \boldblue{R}, but here we will use on the functions \code{select()}, \code{filter()} and \code{arrange()} from the package \textbf{\texttt{dplyr}}. \\
 
-First, we need to load the \texttt{dplyr} package. It is good practise to do this at the beginning of the script when you are setting up the working environment.
+First, we need to load the \texttt{dplyr} package. It is good practice to do this at the beginning of the script when you are setting up the working environment.
 
 \begin{shaded}
 <<>>=
@@ -339,7 +330,7 @@ In this case, the library has to be installed from CRAN. This can be done by typ
 
 Functions such as \code{head()} and \code{str()} are useful to telling you what your data look like, but don't give much information on what the data say.\\
 
-A versatile function for exploring objects is \code{summary()}. This function summarises each numeric column in terms of the median, mean, interquartile range, minimum and maximum. It also provides information on levels and sample sizes for categorical variables. 
+A versatile function for exploring objects is \code{summary()}. This function summarises each numeric column in terms of the median, mean, inter-quartile range, minimum and maximum. It also provides information on levels and sample sizes for categorical variables. 
 
 \begin{shaded}
 <<>>=
@@ -365,7 +356,7 @@ arrange(Peru_Soil_Data, Habitat, Soil_pH)
 \end{shaded}
 
 
-\subsection{Subsetting columns with \code{select()}}
+\subsection{Sub-setting columns with \code{select()}}
 
 At its simplest, columns can be selected using their numeric references in square brackets (\textbf{after} the comma):
 
@@ -397,7 +388,7 @@ select(Peru_Soil_Data, -River_Basin, -Magnesium, -Sodium)
 
 \subsection{Adding columns.}
 
-New columns can be added to the data containing information or calculations that you are interested in. We can do this in standard base R using the code \code{\$}, which can be used to call existing variables from a data frame. For example, river basin can be called as so:
+New columns can be added to the data containing information or calculations that you are interested in. We can do this in standard base \boldblue{R} using the code \code{\$}, which can be used to call existing variables from a data frame. For example, river basin can be called as so:
 
 \begin{shaded}
 <<>>=
@@ -414,9 +405,9 @@ head(select(Peru_Soil_Data, Site, Calcium, log_Calcium))
 @
 \end{shaded}
 
-\subsection{Subsetting rows with \code{filter()}}
+\subsection{Sub-setting rows with \code{filter()}}
 
-Subsetting data by rows is one of the most common tasks carried out in data manipulation steps. Again, at it's simplest, rows can be selected using their numeric references in square brackets (\textbf{before} the comma):
+Sub-setting data by rows is one of the most common tasks carried out in data manipulation steps. Again, at it's simplest, rows can be selected using their numeric references in square brackets (\textbf{before} the comma):
 
 \begin{shaded}
 <<eval = F>>=
@@ -468,10 +459,237 @@ filter(Peru_Soil_Data, Habitat == "floodplain", River_Basin == "Manu")
 \end{enumerate}
 \end{minipage}}
 
-
+% ----------------------------------------------------
 \section{Data visualisation with \texttt{ggplot2}}
+% ----------------------------------------------------
+
+One of \boldblue{R}'s most powerful tools is its ability to produce publication quality graphics in an automated and reproducible way. Base \boldblue{R} contains graphical tools for simple, exploratory graphics. These are easily called with functions such as \code{hist()} and \code{plot()}:
+
+<<eval = F, echo = F>>=
+
+#pdf("figs/base_graphs.pdf", width = 8, height = 3)
+#par(mfrow = c(1, 3))
+
+# histogram
+hist(Peru_Soil_Data$Calcium)
+
+# plot
+plot(Magnesium ~ Calcium, data = Peru_Soil_Data, col = "red")
+
+# boxplot
+boxplot(Magnesium ~ River_Basin, data = Peru_Soil_Data)
+#dev.off()
+
+@
 
 
+\begin{shaded}
+<<eval = F>>=
+# histogram
+hist(Peru_Soil_Data$Calcium)
+
+# plot
+plot(Magnesium ~ Calcium, data = Peru_Soil_Data, col = "red")
+
+# boxplot
+boxplot(Magnesium ~ River_Basin, data = Peru_Soil_Data)
+@
+\end{shaded}
+
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=1\textwidth]{figs/base_graphs.pdf}
+	\label{fig:Base_graphs}
+\end{figure} 
+
+
+
+It is feasible to do anything you require in base graphics, but common actions are not straightforward, including legends, faceting, error bars and customisations of the plot area. Base graphics for quick data exploration, but for everything else we recommend the graphics library \texttt{ggplot2}.
+
+\subsection{\texttt{ggplot2} - the grammar of graphics.}
+
+\texttt{ggplot2} is a plotting system in \boldblue{R} which aims to take the best parts of base graphics and allow for easy plot customisation. It has extensive documentation and examples at \url{docs.ggplot2.org/current/}. \\
+
+% \fbox{\begin{minipage}{36em}
+% \textit{NB. If you have experience of using \bluecode{R}, a common argument for not using \texttt{ggplot2} is that the syntax differs from that of the rest of base \bluecode{R}. Whilst this is true, understanding the building blocks of \texttt{ggplot2} only take minutes to learn and a few hours to master. It's worth learning both base and ggplot2 graphics if you have the time/inclination.}
+% \end{minipage}} \\\\
+
+\texttt{ggplot2} uses \textbf{three} components to construct a graph:
+
+\begin{enumerate}
+\item \textbf{Layers:} \code{ggplot()} Data with aesthetic properties (\code{aes()}).
+\item \textbf{Geoms:} \code{geom\_...()} The type of plot (line, scatter, box-plot, etc.)
+\item \textbf{Stats:} \code{stat\_...()} Statistical transformations (smoothing lines, etc) - NB. every geom has a default statistic, so this component is not always specified.
+\end{enumerate}
+
+\textbf{All} \texttt{ggplot2} graphs begin with the \code{ggplot()} function, specifying the default data and aesthetic properties. This is just a fancy way of saying that we specify the data frame, and then the x and y variables we want to plot.
+
+\subsection{\texttt{ggplot2} basics - a scatter-plot.}
+
+We can start with a simple scatter-plot of Calcium and Magnesium in the Peru soil dataset. We start by defining the \textbf{layer}.
+
+<<eval = T, echo = F>>=
+library(ggplot2)
+@
+
+
+\begin{shaded}
+<<eval = F>>=
+library(ggplot2)
+
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium))
+@
+\end{shaded}
+
+You can see by running the layer alone, we have already run into a problem - there is no data plotted on the graph. This is because we need to specify the \textbf{geom} i.e. the type of plot. Let's use a scatter-plot (\code{geom\_point()}):
+
+\begin{shaded}
+\texttt{ > ggplot(Peru\_Soil\_Data, aes(x = Calcium, y = Magnesium)) + \\
+\hspace*{1cm} geom\_point()}
+\end{shaded}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/fig1.png}
+	\label{fig:fig1}
+\end{figure}
+
+If you wanted to add a regression line, we can specify this with a \textbf{Stat}. In this case, we can use \code{stat\_smooth(method = "lm")} to add a linear regression line:
+
+\begin{shaded}
+\texttt{ > ggplot(Peru\_Soil\_Data, aes(x = Calcium, y = Magnesium)) + \\
+\hspace*{1cm} geom\_point() + \\
+\hspace*{1cm} stat\_smooth(method = "lm")}
+\end{shaded}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/fig2.png}
+	\label{fig:fig2}
+\end{figure}
+
+Adding customisations to the plot is straightforward. For example, colouring the points by habitat is done by adding \code{col = Habitat} to the \code{aes()} properties:
+
+\begin{shaded}
+\texttt{ > ggplot(Peru\_Soil\_Data, aes(x = Calcium, y = Magnesium, \\
+\hspace*{1cm} col = Habitat)) + \\
+\hspace*{1cm} geom\_point() + \\
+\hspace*{1cm} stat\_smooth(method = "lm")}
+\end{shaded}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/fig3.png}
+	\label{fig:fig3}
+\end{figure}
+
+As you can see, this automatically adds a legend to the plot for the different habitat types.
+
+\subsection{Customising plots.}
+
+\texttt{ggplot2} has huge capabilities for plot customisations. The sheer amount of things you can do to the graph can be overwhelming (see the help pages), but most commonly, we will want to change labels, scales, colour palettes and facets. Here are a variety of customisations you can play with, and an example graph is given below.
+\clearpage
+
+\begin{shaded}
+<<eval = T>>=
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium, col = Habitat)) +
+  geom_point() +
+  stat_smooth(method = "lm") +
+  labs(x = "Ca", y = "Mg", col = "Habitat Type") +
+  scale_y_continuous(breaks = seq(0, 2500, 250)) +
+  facet_wrap(~Habitat) +
+  scale_colour_manual(values = c("red", "blue")) +
+  theme(legend.position = "top")
+@
+\end{shaded}
+
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{cl}
+		
+		Function & What it does \\ \hline
+		\code{labs()} & Customise the labels associated with aes() \\
+		              & e.g. \texttt{labs(x = "Ca", y = "Mg", col = "Habitat Type")} \\ \hline
+		\code{scale\_x\_continuous()} & Change the scale of the axes \\
+		\code{scale\_y\_continuous()} & e.g. \texttt{scale\_x\_continuous(breaks = seq(0, 2500, 250))} \\ \hline
+		\code{facet\_wrap()} & Facet the plot by a discrete variable \\
+		                  & e.g. \texttt{facet\_wrap(~Habitat)} \\  \hline
+		\code{scale\_colour\_manual} & Example of one of many ways to define colours \\
+		                           & e.g. \texttt{scale\_colour\_manual(values = c("red", "blue"))} \\ \hline
+		\code{theme()} & Formatting options for axes, plot area, etc. \\
+		               & e.g. \texttt{theme(legend.position = "top")} \\
+		               & (see documentation for \textbf{many, many} options) \\ \hline
+		\texttt{Default themes} & \texttt{theme\_bw(), theme\_light(),} \\
+		                        & \texttt{theme\_dark(), theme\_minimal()}, etc. \\
+		\hline
+		
+	\end{tabular}
+	 
+	\label{tbl:ggplot_customisations}
+\end{table}
+
+
+If you have questions when it comes to customisation, consult the ggplot2 documentation for the types of graph you wish to make, or search Stack Overflow with the tags [r] and [ggplot2].
+
+\subsection{Saving plots}
+
+Plots can be saved to file using \code{ggsave()}. It defaults to saving the last plot that you displayed, using the current size of the graphics window. The type of graphic that is saved depends on the extension you define (e.g. .png, .pdf, etc.). At it's simplest, it can be run as so:
+
+\begin{shaded}
+<<eval = F>>=
+ggsave("Habitat_Ca_MG.png")
+@
+\end{shaded}
+
+Other specifications can be made, such as plot height, width, resolution and so on:
+
+\begin{shaded}
+<<eval = F>>=
+ggsave("Habitat_Ca_Mg.png", width = 12, height = 8, units = "cm", dpi = 300)
+@
+\end{shaded}
+
+
+\fbox{\begin{minipage}{36em}
+\Large{\textbf{Exercise 5.}}
+
+\normalsize
+\begin{enumerate}
+
+\item Create a scatter-plot of Calcium against Potassium. Colour the points based on the Soil pH.
+
+\item Using the ggplot2 help pages, make a box-plot of River Basin (x-axis) and Soil pH (y-axis). Facet the plot by habitat.
+
+\item Using the ggplot2 help pages, make a bar-plot of Site (x-axis) and Sodium (y-axis). (NB - Getting an error? Read the help pages carefully!)
+
+\item Colour the bars in the previous plot by River Basin (Hint: swap \texttt{col} for another command)
+
+\end{enumerate}
+\end{minipage}}
+{.}\\\\
+Feeling adventurous? Draw a map in \boldblue{R}:
+
+\begin{shaded}
+<<>>=
+library(ggplot2)
+library(ggthemes)
+library(maps)
+
+ggplot(data, aes(x = longitude, y = latitude)) +
+    borders("world", colour = "black", fill = "gray80") +
+    theme_map()
+
+@
+\end{shaded}
+
+
+
+%-----------------------------------
+%\section{Writing a Report}.
+%-----------------------------------
 
 
 \end{document}
+
