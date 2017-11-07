@@ -66,7 +66,7 @@ concordance=TRUE
 \title{Using R as a Research Tool.}
 %------------------------------------------------------------
 \author{Dr Susan Johnston: \href{mailto:Susan.Johnston@ed.ac.uk}{Susan.Johnston@ed.ac.uk}  \\ \\
-        Demonstrators: Gergana Dalaskova, John Godlee. \\
+        Demonstrators: Gergana Daskalova, John Godlee. \\
         Hat-Tips to Kyle Dexter, The Coding Club and R4all.}
 %\date{}
 
