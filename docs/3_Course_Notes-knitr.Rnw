@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,14pt]{article}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{amsmath}
@@ -152,7 +152,7 @@ Open \texttt{Intro\_to\_R.RProj} and open the example \boldblue{R} Script (\text
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=1.1\textwidth]{figs/R_Studio.png}
-	\caption{The RStudio Environment. Taken from OurCodingClub.io}
+	\caption{The RStudio Environment. Taken from OurCodingClub.github.io}
 	\label{fig:R_Studio}
 \end{figure} 
 
@@ -175,7 +175,7 @@ Try running some basic commands directly in the console and from the \boldblue{R
 <<eval = F>>=
 2+3
 1:10
-seq(1, 20, 4)
+seq(from = 1, to = 20, by = 4)
 mean(c(3, 6, 9, 3, 6, 7))
 @
 \end{shaded}
@@ -189,7 +189,7 @@ Let's assign a sequence of numbers to an object, \code{x}:
 x <- 1:10
 x
 
-y <- seq(0, 4.5, 0.5)
+y <- seq(from = 0, to = 4.5, by = 0.5)
 y
 @
 \end{shaded}
@@ -216,7 +216,6 @@ should bring up a help page for the function \code{mean()} in the lower right co
 @
 \end{shaded}
 
-\\
 
 \fbox{\begin{minipage}{36em}
 \Large{\textbf{Exercise 2.}}
@@ -295,7 +294,7 @@ We recommend that instead of \code{read.delim()}, that you use either \code{read
 \\
 
 \normalsize
-Using \code{?}, find the help page for \code{read.table}. Read the file \texttt{Peru\_Soil\_Data.txt} into \boldblue{R}. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
+Using \code{?}, find the help page for \code{read.csv}. Read the file \texttt{Peru\_Soil\_Data.csv} into \boldblue{R}. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
 
 \end{minipage}}
 
@@ -308,7 +307,7 @@ The object \texttt{Peru\_Soil\_Data} is a type of object known as a \textbf{data
 \section{Data management in \boldblue{R}.}
 %--------------------------------------------
 
-Exploring and manipulating data is fundamental to data analysis. In this section, we will briefly cover how to sort and filter the soil dataset. There are several approaches to doing this in the base code of \boldblue{R}, but here we will use on the functions \code{select()}, \code{filter()} and \code{arrange()} from the package \boldblue{dplyr}}. \\
+Exploring and manipulating data is fundamental to data analysis. In this section, we will briefly cover how to sort and filter the soil dataset. There are several approaches to doing this in the base code of \boldblue{R}, but here we will use on the functions \code{select()}, \code{filter()} and \code{arrange()} from the package \boldblue{dplyr}. \\
 
 First, we need to load the \texttt{dplyr} package. It is good practice to do this at the beginning of the script when you are setting up the working environment.
 
@@ -599,9 +598,10 @@ As you can see, this automatically adds a legend to the plot for the different h
 		\code{labs()} & Customise the labels associated with aes() \\
 		              & e.g. \texttt{labs(x = "Ca", y = "Mg", col = "Habitat Type")} \\ \hline
 		\code{scale\_x\_continuous()} & Change the scale of the axes \\
-		\code{scale\_y\_continuous()} & e.g. \texttt{scale\_x\_continuous(breaks = seq(0, 2500, 250))} \\ \hline
+		\code{scale\_y\_continuous()} & e.g. \texttt{scale\_x\_continuous(breaks =} \\
+		                              & \hspace*{1cm}\texttt{seq(from = 0, to = 2500, by = 250))} \\ \hline
 		\code{facet\_wrap()} & Facet the plot by a discrete variable \\
-		                  & e.g. \texttt{facet\_wrap(~Habitat)} \\  \hline
+		                  & e.g. \texttt{facet\_wrap($\sim$Habitat)} \\  \hline
 		\code{scale\_colour\_manual} & Example of one of many ways to define colours \\
 		                           & e.g. \texttt{scale\_colour\_manual(values = c("red", "blue"))} \\ \hline
 		\code{theme()} & Formatting options for axes, plot area, etc. \\
@@ -623,7 +623,7 @@ ggplot(Peru_Soil_Data, aes(x = Calcium, y = Magnesium, col = Habitat)) +
   geom_point() +
   stat_smooth(method = "lm") +
   labs(x = "Ca", y = "Mg", col = "Habitat Type") +
-  scale_y_continuous(breaks = seq(0, 2500, 250)) +
+  scale_y_continuous(breaks = seq(from = 0, to = 2500, by = 250)) +
   facet_wrap(~Habitat) +
   scale_colour_manual(values = c("red", "blue")) +
   theme(legend.position = "top")
