@@ -1,0 +1,26 @@
+Site	River_Basin	Habitat	Soil_pH	Nitrate_Nitrogen	Phosphorus	Calcium	Magnesium	Potassium	Sodium	Manganese
+Blanquillo	Madre_de_Dios	floodplain	5.2	1	6.5	864	278	42.5	136	7
+BocaManu	Manu	floodplain	5.9	1.5	5.5	2260.5	244.5	64.5	19.5	16.5
+Camungo	Madre_de_Dios	floodplain	6.2	1.5	57	1853	177.5	52.5	11	17.5
+CICRA	Los_Amigos	floodplain	4.9	1.4	3.3	861.3	184.8	55.5	11.9	
+CM2	Los_Amigos	floodplain	5.4	0	3.5	1473	214.5	65.5	8.5	33
+CM3	Los_Amigos	floodplain	5	1	2	524.5	64.5	19	7.5	19.5
+CochaCashu		floodplain	5.8	2.2	28.4	1943.9	255.8	63.1	11.4	95.6
+LasPiedras	Las_Piedras	floodplain	5.3	1.3	3.8	949.5	176.5	44	8.5	
+Maizal	Manu	floodplain	6.7	0.5	35.5	2292	239	84	9	26.5
+Otorongo	Manu	floodplain	6.4	0	18.5	2034.5	248	79	9	16
+Pakitza	Manu	floodplain	6.2	1.5	9.5	2108	226	66.5	11	12.5
+Refugio	Los_Amigos	floodplain	5.3	0.5	3.5	653.5	125.5	31	6	27
+Salvador	Manu	floodplain	6.4	1		2145.5	323	88.5	11.5	14
+Tambopata	Tambopata	floodplain	5	1.3	5	403.3	138	30	7	27.5
+BocaManu	Manu	upland	4.4	2	4	114.5	22	22	11.5	92
+CICRA	Los_Amigos	upland	4	2.4	4	53.1	13.7	19.2	5.7	6.7
+CM2	Los_Amigos		4.2	0.5	3	40.5	11	17	4.5	24.5
+CM3	Los_Amigos	upland	4.9	0	2	84	12	17		
+CochaCashu	Manu	upland	4.6	2.3	5.4	141.4	29		4.5	44.1
+LasPiedras	Las_Piedras	upland	5.6	1.8	1.8	271.3	37.5	32.3	4.3	74.5
+Maizal	Manu	upland	5.9	2	4	543	96.5	35.5	4	103.5
+Pakitza	Manu	upland	4.5	1.5	4.5	104.5	28.5	33	5	15.5
+Refugio	Los_Amigos	upland	4.4	0	2.5	41.5	10.5	14.5	3.5	15
+Salvador	Manu	upland	4.3	2	4.5	91	20	27	4.5	5
+Tambopata	Tambopata	upland	4.2	2.3	4.3	39	15.5	35.8	5.5	12
