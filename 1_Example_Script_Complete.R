@@ -15,13 +15,13 @@
 
 2+3
 1:10
-seq(1, 20, 4)
+seq(from = 1, to = 20, by = 4)
 mean(c(3, 6, 9, 3, 6, 7))
 
 x <- 1:10
 x
 
-y <- seq(0, 4.5, 0.5)
+y <- seq(from = 0, to = 4.5, by = 0.5)
 y
 
 # Exercise 2
@@ -149,23 +149,23 @@ ggsave("Habitat_Ca_Mg.png", width = 12, height = 8, units = "cm", dpi = 300)
 
 # 1
 
-ggplot(Peru_Soil_Data, aes(Calcium, Potassium, colour = Soil_pH)) +
+ggplot(Peru_Soil_Data, aes(x = Calcium, y = Potassium, colour = Soil_pH)) +
   geom_point()
 
 # 2
 
-ggplot(Peru_Soil_Data, aes(River_Basin, Soil_pH)) +
+ggplot(Peru_Soil_Data, aes(x = River_Basin, y = Soil_pH)) +
   geom_boxplot() +
   facet_wrap(~Habitat)
 
 # 3
 
-ggplot(Peru_Soil_Data, aes(Site, Sodium)) +
+ggplot(Peru_Soil_Data, aes(x = Site, y = Sodium)) +
   geom_col()
 
 # 4
 
-ggplot(Peru_Soil_Data, aes(Site, Sodium, fill = River_Basin)) +
+ggplot(Peru_Soil_Data, aes(x = Site, y = Sodium, fill = River_Basin)) +
   geom_col()
 
 # DRAW A MAP
