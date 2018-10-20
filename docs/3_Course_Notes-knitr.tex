@@ -60,11 +60,10 @@
 %------------------------------------------------------------
 \title{Using R as a Research Tool.}
 %------------------------------------------------------------
-\author{Dr Susan Johnston: \href{mailto:Susan.Johnston@ed.ac.uk}{Susan.Johnston@ed.ac.uk}  \\ \\
-        Demonstrators: Gergana Daskalova, John Godlee. \\
-        Hat-Tips to Kyle Dexter, The Coding Club and R4all.}
-%\date{}
-
+\author{\small{Dr Susan Johnston: \href{mailto:Susan.Johnston@ed.ac.uk}{Susan.Johnston@ed.ac.uk}}  \\
+        \small{Demonstrators: Gergana Daskalova, John Godlee.} \\
+        \small{Based on information from The Coding Club and R4all.}}
+\date{}
 
 
 
@@ -81,6 +80,8 @@
 %-------------------------------------------
 \section {Introduction}
 %--------------------------------------------
+
+The prerequisite to this tutorial is the Datacamp Introduction to R Course (\url{https://www.datacamp.com/courses/free-introduction-to-r}). The datasets for this tutorial can be downloaded from \url{https://github.com/susjoh/Intro_to_R}.
 
 \subsection {What is \boldblue{R}?}
 
@@ -107,7 +108,7 @@ Almost anything is possible in \boldblue{R}. It is fast becoming the \textit{lin
 \item Creating portable projects (\boldblue{RStudio} Projects)
 \end{itemize}
 
-The analytical power of \boldblue{R} lies in its many packages (11,172 at the time of writing). At least 300 of these are written for ecologists and evolutionary biologists. A list of packages are hosted on the Comprehensive R Archive Network (known as \textbf{CRAN}): \url{https://cran.r-project.org/}.
+The analytical power of \boldblue{R} lies in its many packages (13,236 at the time of writing). At least 300 of these are written for ecologists and evolutionary biologists. A list of packages are hosted on the Comprehensive R Archive Network (known as \textbf{CRAN}): \url{https://cran.r-project.org/}.
 
 
 %-------------------------------------------
@@ -120,11 +121,11 @@ The analytical power of \boldblue{R} lies in its many packages (11,172 at the ti
 
 \subsection {Creating an \boldblue{R} Project.}
 
-Using \boldblue{R} Projects (\texttt{.RProj}) allows easier file imports, improved reproducibility and collaboration. This is primarily because it tells \boldblue{R} where to look for data files and scripts, meaning that a script can be run different machines and environments without any problems. We have provided you with the project \texttt{Intro\_to\_R.RProj}. Opening this file will open \boldblue{RStudio}. If you would rather not use projects, you can set the working directory by using the command \code{setwd()} or by selecting \texttt{Session > Set working directory > Choose directory}. \\
+Using \boldblue{R} Projects (\texttt{.RProj}) allows easier file imports, improved reproducibility and collaboration. This is because it tells \boldblue{R} where to look for data files and scripts, meaning that a script can be run different machines and environments without any problems. We have provided you with the project \texttt{Intro\_to\_R.RProj}. Opening this file will open \boldblue{RStudio}. If you would rather not use projects, you can set the working directory by using the command \code{setwd()} or by selecting \texttt{Session > Set working directory > Choose directory}. Projects can be created using \texttt{File > New Project} and following the instructions. \\
 
 On the Files tab in the \textbf{lower right} corner, you will see the files in the current working directory. This will be useful later when we tell \boldblue{R} to load files. You can check the working directory by typing \code{getwd()}.
 
-%Creating an \boldblue{R} Project is straightforward: select \texttt{File > New Project} and follow the instructions.
+%Creating an \boldblue{R} Project is straightforward: select  and follow the instructions.
 
 
 \subsection {Using \boldblue{RStudio}}
@@ -135,7 +136,7 @@ Open \texttt{Intro\_to\_R.RProj} and open the example \boldblue{R} Script (\text
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=1.1\textwidth]{figs/R_Studio.png}
-	\caption{The RStudio Environment. Taken from OurCodingClub.github.io}
+	\caption{The RStudio Environment. Adapted from OurCodingClub.github.io}
 	\label{fig:R_Studio}
 \end{figure} 
 

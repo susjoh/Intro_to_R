@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.17)  8 NOV 2017 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.17)  20 OCT 2018 23:08
 entering extended mode
 **./3_Course_Notes-knitr.tex
 (3_Course_Notes-knitr.tex
@@ -503,22 +503,22 @@ LaTeX Info: Redefining \nameref on input line 52.
 \c@mv@boldtabular=\count122
 
 (3_Course_Notes-knitr-concordance.tex)
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 93.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-LaTeX Font Info:    Try loading font information for TS1+zgmx on input line 102
+LaTeX Font Info:    Try loading font information for TS1+zgmx on input line 103
 .
 
 (C:\Users\sjohns10\AppData\Roaming\MiKTeX\2.9\tex\latex\garamondx\ts1zgmx.fd
@@ -530,22 +530,22 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 [1
 
 {C:/Users/sjohns10/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
-<figs/R_Studio.png, id=103, 963.6pt x 513.92pt>
+<figs/R_Studio.png, id=106, 963.6pt x 519.3804pt>
 File: figs/R_Studio.png Graphic file (type png)
  <use figs/R_Studio.png>
-Package pdftex.def Info: figs/R_Studio.png used on input line 137.
-(pdftex.def)             Requested size: 492.88388pt x 262.87206pt.
+Package pdftex.def Info: figs/R_Studio.png used on input line 138.
+(pdftex.def)             Requested size: 492.88388pt x 265.66507pt.
 
-Overfull \hbox (44.8101pt too wide) in paragraph at lines 137--138
+Overfull \hbox (44.8101pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
@@ -553,17 +553,17 @@ Overfull \hbox (44.8101pt too wide) in paragraph at lines 137--138
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--148
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
@@ -576,22 +576,22 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [3 <./figs/R_Studio.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
@@ -599,14 +599,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--240
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
-[4] <figs/Import_Dataset2.JPG, id=126, 520.51607pt x 430.60875pt>
+[4] <figs/Import_Dataset2.JPG, id=129, 520.51607pt x 430.60875pt>
 File: figs/Import_Dataset2.JPG Graphic file (type jpg)
 
 <use figs/Import_Dataset2.JPG>
-Package pdftex.def Info: figs/Import_Dataset2.JPG used on input line 244.
+Package pdftex.def Info: figs/Import_Dataset2.JPG used on input line 245.
 (pdftex.def)             Requested size: 358.46039pt x 296.5487pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
@@ -615,34 +615,34 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [5 <./figs/Import_Dataset2.JPG>]
-Overfull \hbox (29.3491pt too wide) in paragraph at lines 280--281
+Overfull \hbox (29.3491pt too wide) in paragraph at lines 281--282
 []\T1/zgmx/m/n/12 We rec-om-mend that in-stead of []\T1/aett/m/n/12 read.delim(
 )[]\T1/zgmx/m/n/12 , that you use ei-ther []\T1/aett/m/n/12 read.table()[] \T1/
 zgmx/m/n/12 or []\T1/aett/m/n/12 read.csv()[]\T1/zgmx/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
@@ -651,17 +651,17 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
@@ -672,10 +672,10 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 [7]
 
 LaTeX Font Warning: Font shape `T1/aett/b/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 360.
+(Font)              using `T1/aett/m/n' instead on input line 361.
 
 
-Overfull \hbox (1.23445pt too wide) in paragraph at lines 392--393
+Overfull \hbox (1.23445pt too wide) in paragraph at lines 393--394
 []\T1/zgmx/m/n/12 It is not al-ways rec-om-mended to use nu-mer-i-cal ref-er-en
 ces, as ad-di-tion or re-moval of columns
  []
@@ -690,33 +690,33 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 [9]
 
-LaTeX Warning: Command \textless invalid in math mode on input line 474.
+LaTeX Warning: Command \textless invalid in math mode on input line 475.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 475.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 476.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 476.
+LaTeX Warning: Command \textless invalid in math mode on input line 477.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 477.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 478.
 
 
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
-[10] <figs/base_graphs.pdf, id=156, 578.16pt x 216.81pt>
+[10] <figs/base_graphs.pdf, id=159, 578.16pt x 216.81pt>
 File: figs/base_graphs.pdf Graphic file (type pdf)
 
 <use figs/base_graphs.pdf>
-Package pdftex.def Info: figs/base_graphs.pdf used on input line 536.
+Package pdftex.def Info: figs/base_graphs.pdf used on input line 537.
 (pdftex.def)             Requested size: 448.07378pt x 168.026pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
 
@@ -728,26 +728,26 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
-[12 <./figs/base_graphs.pdf>] <figs/fig1.png, id=179, 144.54pt x 144.54pt>
+[12 <./figs/base_graphs.pdf>] <figs/fig1.png, id=182, 144.54pt x 144.54pt>
 File: figs/fig1.png Graphic file (type png)
 
 <use figs/fig1.png>
-Package pdftex.def Info: figs/fig1.png used on input line 586.
+Package pdftex.def Info: figs/fig1.png used on input line 587.
 (pdftex.def)             Requested size: 224.03688pt x 224.04788pt.
- <figs/fig2.png, id=180, 144.54pt x 144.54pt>
+ <figs/fig2.png, id=183, 144.54pt x 144.54pt>
 File: figs/fig2.png Graphic file (type png)
 
 <use figs/fig2.png>
-Package pdftex.def Info: figs/fig2.png used on input line 600.
+Package pdftex.def Info: figs/fig2.png used on input line 601.
 (pdftex.def)             Requested size: 201.63182pt x 201.64221pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/fig3.png, id=181, 216.81pt x 144.54pt>
+<figs/fig3.png, id=184, 216.81pt x 144.54pt>
 File: figs/fig3.png Graphic file (type png)
  <use figs/fig3.png>
-Package pdftex.def Info: figs/fig3.png used on input line 615.
+Package pdftex.def Info: figs/fig3.png used on input line 616.
 (pdftex.def)             Requested size: 291.24521pt x 194.18762pt.
 
 
@@ -762,15 +762,15 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [14 <./figs/fig2.png> <./figs/fig3.png>]
-Overfull \hbox (3.66315pt too wide) in paragraph at lines 628--648
+Overfull \hbox (3.66315pt too wide) in paragraph at lines 629--649
  [][] 
  []
 
-<3_Course_Notes-knitr-025.pdf, id=194, 433.62pt x 252.945pt>
+<3_Course_Notes-knitr-025.pdf, id=197, 433.62pt x 252.945pt>
 File: 3_Course_Notes-knitr-025.pdf Graphic file (type pdf)
 
 <use 3_Course_Notes-knitr-025.pdf>
-Package pdftex.def Info: 3_Course_Notes-knitr-025.pdf used on input line 666.
+Package pdftex.def Info: 3_Course_Notes-knitr-025.pdf used on input line 667.
 (pdftex.def)             Requested size: 358.46039pt x 209.11061pt.
 
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
@@ -779,39 +779,39 @@ Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 [15
 
  <./3_Course_Notes-knitr-025.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 712--728
+Underfull \hbox (badness 10000) in paragraph at lines 713--729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--728
+Underfull \hbox (badness 10000) in paragraph at lines 713--729
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 736.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 737.
 
 Overfull \vbox (21.68121pt too high) has occurred while \output is active []
 
 
 [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 736.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 737.
  (3_Course_Notes-knitr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 736.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 736.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 737.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 737.
 Package rerunfilecheck Info: File `3_Course_Notes-knitr.out' has not changed.
 (rerunfilecheck)             Checksum: A358814B95B49334C1A8FD91E1B4267B;1496.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 736.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 737.
  ) 
 Here is how much of TeX's memory you used:
- 8462 strings out of 493333
- 121786 string characters out of 3139184
- 212880 words of memory out of 3000000
- 11768 multiletter control sequences out of 15000+200000
- 62162 words of font info for 83 fonts, out of 3000000 for 9000
+ 8463 strings out of 493333
+ 121803 string characters out of 3139184
+ 212882 words of memory out of 3000000
+ 11769 multiletter control sequences out of 15000+200000
+ 67256 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,9n,35p,994b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/sjohns10/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/garamondx/zgm_t
@@ -825,9 +825,9 @@ ts/type1/public/garamondx/NewG8-Reg.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 /cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsltt
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 3_Course_Notes-knitr.pdf (16 pages, 599723 bytes).
+Output written on 3_Course_Notes-knitr.pdf (16 pages, 798178 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
+ 265 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 500000)
  208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
