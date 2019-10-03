@@ -1,10 +1,7 @@
 # Intro_to_R
 
-<<<<<<< HEAD
+
 The repository contains information for the Introduction to R Course for the NERC E4 DTP at the University of Edinburgh.
-=======
-Course prerequisite: REDACTED (Why - more information [here](https://blog.rladies.org/post/statement-about-datacamp/). I will provide an alternative resource ASAP).
->>>>>>> origin/master
 
 This is the first of two sessions to demonstrate how to create a basic research workflow in R, which will cover:
 
