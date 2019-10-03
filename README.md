@@ -17,7 +17,7 @@ Please prepare for this session in advance. There are two options:
 
 Course notes: 20191008_Using_R_as_a_Research_Tool.pdf
 
-Presentation: Using R as a Research Tool.pdf
+Presentation: Using R as a Research Tool.pptx
 
 Advanced exercises: Advanced Exercises for Keen Beans.pdf
 
