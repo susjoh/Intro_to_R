@@ -168,11 +168,4 @@ ggplot(Peru_Soil_Data, aes(x = Site, y = Sodium)) +
 ggplot(Peru_Soil_Data, aes(x = Site, y = Sodium, fill = River_Basin)) +
   geom_col()
 
-# DRAW A MAP
 
-library(ggthemes)
-library(maps)
-
-ggplot(data, aes(x = longitude, y = latitude)) +
-  borders("world", colour = "black", fill = "grey80") +
-  theme_map()
