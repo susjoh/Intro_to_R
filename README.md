@@ -10,11 +10,12 @@ This is the first of two sessions to demonstrate how to create a basic research 
 * Reading in and managing data.
 * Data visualisation with ggplot2.
 
-As the course is online this year, we will trial the use of a `learnr` tutorial. This can be run by opening `Intro_to_R.Rproj` in RStudio and then doing the following:
+As the course is online this year, we will trial the use of a `learnr` tutorial. This can be run as follwos:
 
-1. Open `Tutorial_E4_Introduction_to_R.Rmd`
-2. Click on the Cog above the top left hand window and select "Preview in Viewer Pane"
-3. Click "Run Document"
+1. Opening `Intro_to_R.Rproj` in RStudio
+2. Open `Tutorial_E4_Introduction_to_R.Rmd`
+3. Click on the Cog above the top left hand window and select "Preview in Viewer Pane"
+4. Click "Run Document"
 
 
 **Course notes in PDF:** Tutorial_E4_Introduction_to_R_Handout.pdf
