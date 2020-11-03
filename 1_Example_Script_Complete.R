@@ -41,12 +41,17 @@ library(ggplot2)
 # 2. Load data
 #----------------------------------------
 
-# Peru_Soil_Data <- read.delim("data/Peru_Soil_Data.txt")
-Peru_Soil_Data <- read.csv("data/Peru_Soil_Data.csv", header = T)  # Exercise 3
+Peru_Soil_Data <- read.table("data/Peru_Soil_Data.txt", header = T)  # Exercise 3
+head(Peru_Soil_Data)
+str(Peru_Soil_Data)
 
 #----------------------------------------
 # 3. Manage data
 #----------------------------------------
+
+# What does it look like?
+
+glimpse(Peru_Soil_Data)
 
 # Summary Statistics
 

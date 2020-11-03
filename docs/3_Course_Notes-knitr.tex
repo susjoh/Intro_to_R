@@ -47,6 +47,7 @@
 
 \newcommand\boldblue[1]{\textcolor{blue}{\textbf{#1}}}
 \newcommand\code[1]{\textcolor{red}{\texttt{#1}}}
+\newcommand\codetwo[1]{\textcolor{forestgreen}{\texttt{#1}}}
 
 \usepackage{Sweave}
 \begin{document}
@@ -61,24 +62,11 @@
 \title{Using R as a Research Tool.}
 %------------------------------------------------------------
 \author{\small{Dr Susan Johnston: \href{mailto:Susan.Johnston@ed.ac.uk}{Susan.Johnston@ed.ac.uk}}  \\
-        \small{Demonstrator: Gergana Daskalova} \\
-        \small{8th October 2019}}
+        \small{Demonstrator: Lucy Peters} \\
+        \small{3rd November 2020}}
     \date{}
 
-
-
-
-
-
-
 \maketitle
-
-
-
-
-
-%\tableofcontents
-
 
 %-------------------------------------------
 \section {Introduction}
@@ -99,8 +87,7 @@ This tutorial is based on information from Our Coding Club: \url{https://ourcodi
 
 \end{center}
 
-
-Almost anything is possible in \boldblue{R}. It is fast becoming the \textit{lingua franca} of academic research and data science. It is used for:
+Almost anything is possible in \boldblue{R}. It is fast becoming the \textit{lingua franca} of academic research, statistics and data science. It is used for:
 
 \begin{itemize}
 \item Processing and tidying data 
@@ -111,8 +98,7 @@ Almost anything is possible in \boldblue{R}. It is fast becoming the \textit{lin
 \item Creating portable projects (\boldblue{RStudio} Projects)
 \end{itemize}
 
-The analytical power of \boldblue{R} lies in its many packages (13,236 at the time of writing). At least 300 of these are written for ecologists and evolutionary biologists. A list of packages are hosted on the Comprehensive R Archive Network (known as \textbf{CRAN}): \url{https://cran.r-project.org/}.
-
+The analytical power of \boldblue{R} lies in its many packages (16,454 as of 1st Nov 2020). Hundreds of these are written for geoscience, ecology and evolutionary biology. A list of packages are hosted on the Comprehensive R Archive Network (known as \textbf{CRAN}): \url{https://cran.r-project.org/}.
 
 %-------------------------------------------
 \section {Getting Started: \boldblue{R} and the \boldblue{RStudio} Environment.}
@@ -121,15 +107,40 @@ The analytical power of \boldblue{R} lies in its many packages (13,236 at the ti
 
 \boldblue{R} can be downloaded from the CRAN website. Whilst the CRAN download version provides a simple user interface, we recommend that \boldblue{R} is run through the software \boldblue{RStudio} This is open-source, free, and available at \url{http://www.rstudio.com/}.
 
-
 \subsection {Creating an \boldblue{R} Project.}
 
-Using \boldblue{R} Projects (\texttt{.RProj}) allows easier file imports, improved reproducibility and collaboration. This is because it tells \boldblue{R} where to look for data files and scripts, meaning that a script can be run different machines and environments without any problems. We have provided you with the project \texttt{Intro\_to\_R.RProj}. Opening this file will open \boldblue{RStudio}. If you would rather not use projects, you can set the working directory by using the command \code{setwd()} or by selecting \texttt{Session > Set working directory > Choose directory}. Projects can be created using \texttt{File > New Project} and following the instructions. \\
+Using \boldblue{R} Projects (\texttt{.RProj}) allows easier file imports, improved reproducibility and collaboration. This is because it tells \boldblue{R} where to look for data files and scripts, meaning that a script can be run different machines and environments without any problems. Projects can be created using \texttt{File > New Project} and following the instructions. \\ 
+
+We have provided the project \texttt{Intro\_to\_R.RProj}. Opening this file will open \boldblue{RStudio}. If you would rather not use projects, you can set the working directory by using the command \code{setwd()} or by selecting \texttt{Session > Set working directory > Choose directory}. \\
 
 On the Files tab in the \textbf{lower right} corner, you will see the files in the current working directory. This will be useful later when we tell \boldblue{R} to load files. You can check the working directory by typing \code{getwd()}.
 
-%Creating an \boldblue{R} Project is straightforward: select  and follow the instructions.
 
+\subsection {Structuring an \boldblue{R} Project.}
+
+Using a good project layout keeps the data reliable, portable and reproducible. This makes it easier for you or a collaborator to pick up the project after a break. There is no single way to structure a project, but a suggestion is shown in Figure \ref{fig:data_structure}. This is based on a blog post on Nice R Code (available at \url{https://nicercode.github.io/blog/2013-04-05-projects/}).
+
+\begin{itemize}
+\item \boldblue{data} contains all data used in the analysis and should be treated as \textbf{read only} - these files should never be edited or overwritten. Rather, they should be processed within R scripts.
+\item \boldblue{docs} contains the paper and/or reports associated with the analysis (in Word, R Markdown, \LaTeX, etc).
+\item \boldblue{figs} contains any figures generated by R scripts.
+\item \boldblue{results} contains any simulation outputs, processed data etc. NB. Data in \texttt{figs} and \texttt{results} can be treated as disposable.
+\item \boldblue{[filename].R} are R scripts. You can split your workflow into units that are logical for you, such as (a) load, merge and clean data, (b) analyse the data and (c) create outputs such as results tables and figures. Some researchers use a numbering method so that the order in which to run different scripts is clear. 
+\item \boldblue{example\_project.Rproj} is the portable R project.
+
+\end{itemize}
+
+
+\begin{figure}[h]
+	\centering 
+	\fbox{\includegraphics[width=0.35\textwidth]{figs/data_structure.PNG}}
+	\caption{Example structure for a portable R project.}
+	\label{fig:data_structure}
+\end{figure} 
+
+\fbox{\begin{minipage}{36em}
+\textbf{The take-home message is to start your analysis from copies of the raw data, doing any cleaning, transforming, merging and so on in scripts. Always comment and document your code thoroughly, explain what it is doing and why.}
+\end{minipage}}
 
 \subsection {Using \boldblue{RStudio}}
 
@@ -233,42 +244,18 @@ should bring up a help page for the function \code{mean()} in the lower right co
 \end{itemize}
 
 
+
+
 %-------------------------------------------
 \section{Loading data into \boldblue{R}.}
 %--------------------------------------------
 
-Now that we are familiar with the \boldblue{RStudio} environment, it's time to start working with real data. \\
+Now that we are familiar with the \boldblue{RStudio} environment, it's time to start working with real data. In the folder \boldblue{data}, you have been provided with a single dataset on Peruvian Soil in two common formats - \texttt{.txt} (tab-delimited) and \texttt{.csv} (comma-delimited). \\
 
-In the folder \texttt{data}, you have been provided with a single dataset on Peruvian Soil in two common formats - \texttt{.txt} (tab-delimited) and \texttt{.csv} (comma-delimited). \\
-
-The easiest way to read the data into \boldblue{R} is to use the \texttt{Import dataset} button in the Environment tab, selecting \texttt{From Text (base)...} and choosing either data file (\texttt{.txt} or \texttt{.csv}). A box will appear (Figure \ref{fig:Import_Dataset2}). Check each of the options that applies to the data (i.e. change nothing) and click ``\texttt{Import}''. You will notice that the object \texttt{Peru\_Soil\_Data} is now in the \boldblue{R} environment, but you may also have noticed a command appearing in the Console: \\
-
-
-\begin{figure}[t]
-	\centering 
-	\includegraphics[width=0.8\textwidth]{figs/Import_Dataset2.JPG}
-	\caption{Importing data manually into \boldblue{R}}
-	\label{fig:Import_Dataset2}
-\end{figure} 
-
-
+Using \boldblue{R} Projects means that the working directory is the same as the .Rproj file. We will use \code{read.csv()} to read in the data-set. Try typing the following into your script, and guiding the command to the data file using the \texttt{Tab} key:
 
 \begin{shaded}
-\begin{Schunk}
-\begin{Sinput}
-> Peru_Soil_Data <- read.delim("C:/Users/sjohns10/Google Drive/
-+ Teaching and Seminars/201711 NERC E3 DTP/Intro_to_R/data/
-+ Peru_Soil_Data.txt")
-\end{Sinput}
-\end{Schunk}
-\end{shaded}
-
-This command can be copied and pasted into your script, which would save you from clicking the next time. However, providing such a long path if problematic - if you were to rename one of the directories, or move the folder somewhere else, then the code would no longer work. \\
-
-\boldblue{R} Projects provide the solution to this. Try typing the following into your script, and guiding the command to the data file using the \texttt{Tab} key:
-
-\begin{shaded}
-\texttt{Peru\_Soil\_Data <- read.delim("}
+\texttt{Peru\_Soil\_Data <- read.csv("}
 \end{shaded}
 
 You should now have the following code in your script:
@@ -276,13 +263,13 @@ You should now have the following code in your script:
 \begin{shaded}
 \begin{Schunk}
 \begin{Sinput}
-> Peru_Soil_Data <- read.delim("data/Peru_Soil_Data.txt")
+> Peru_Soil_Data <- read.csv("data/Peru_Soil_Data.csv")
 \end{Sinput}
 \end{Schunk}
 \end{shaded}
 
 
-We recommend that instead of \code{read.delim()}, that you use either \code{read.table()} or \code{read.csv()}, as they offer more flexibility on defining various features about the input files. \\\\
+You can also use either \code{read.table()} which offers more flexibility on defining various features about the input files. \\\\
 
 
 \fbox{\begin{minipage}{36em}
@@ -290,7 +277,7 @@ We recommend that instead of \code{read.delim()}, that you use either \code{read
 \\
 
 \normalsize
-Using \code{?}, find the help page for \code{read.csv}. Read the file \texttt{Peru\_Soil\_Data.csv} into \boldblue{R}. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
+Using \code{?}, find the help page for \code{read.table}. Read the file \texttt{Peru\_Soil\_Data.txt} into \boldblue{R}. Check the loaded object using the \code{head()} function. Do you need additional arguments to read in the file properly?
 
 \end{minipage}}
 
@@ -327,7 +314,7 @@ In this case, the library has to be installed from CRAN. This can be done by typ
 
 Functions such as \code{head()} and \code{str()} are useful to telling you what your data look like, but don't give much information on what the data say.\\
 
-A versatile function for exploring objects is \code{summary()}. This function summarises each numeric column in terms of the median, mean, inter-quartile range, minimum and maximum. It also provides information on levels and sample sizes for categorical variables. 
+A versatile function for exploring objects is \code{summary()}. This function summarises each numeric column in terms of the median, mean, inter-quartile range, minimum and maximum. It also provides information on levels and sample sizes for categorical variables.
 
 \begin{shaded}
 \begin{Schunk}
@@ -436,7 +423,7 @@ Levels: Las_Piedras Los_Amigos Madre_de_Dios Manu Tambopata
 \end{Schunk}
 \end{shaded}
 
-Columns can be added by creating new variables within the data frame. Here, we can create a new column called log\_Calcium which takes the $log_{10}$ of the calcium column:
+Columns can be added by creating new variables within the data frame. Here, we can create a new column called \texttt{log\_Calcium} which takes the $log_{10}$ of the calcium column:
 
 \begin{shaded}
 \begin{Schunk}
@@ -458,7 +445,7 @@ Columns can be added by creating new variables within the data frame. Here, we c
 
 \subsection{Sub-setting rows with \code{filter()}}
 
-Sub-setting data by rows is one of the most common tasks carried out in data manipulation steps. Again, at it's simplest, rows can be selected using their numeric references in square brackets (\textbf{before} the comma):
+Sub-setting data by rows is one of the most common tasks carried out in data manipulation steps. Again, at its simplest, rows can be selected using their numeric references in square brackets (\textbf{before} the comma):
 
 \begin{shaded}
 \begin{Schunk}
@@ -469,7 +456,7 @@ Sub-setting data by rows is one of the most common tasks carried out in data man
 \end{Schunk}
 \end{shaded}
 
-However, this is clearly not useful if we wish to select rows based on a particular criteria. For this, we can used the \code{filter()} function, specifying an argument with the following logical operators:
+However, this is not useful if we wish to select rows based on a particular criteria. For this, we can used the \code{filter()} function, specifying an argument with the following logical operators:
 
 \begin{table}[h]
 	\centering
@@ -482,7 +469,7 @@ However, this is clearly not useful if we wish to select rows based on a particu
 		$=\textgreater$ & greater than or equal to\\
 		$==$ & equals \\
 		$!=$ & does not equal \\
-		$\%in\%$ & matches \\
+		\texttt{\%in\%} & matches \\
 
 	\end{tabular}
 	 
@@ -506,9 +493,9 @@ For examples, in the soil data, we may wish to select only rows for the floodpla
 \begin{enumerate}
 
 \item Create a new data frame, Peru\_Upland\_Soil, which includes row only from upland habitats.
-\item Edit this data frame so that it only includes data from the Manu and Los Amigos river basins (Hint: use $\%in\%$)
+\item Edit this data frame so that it only includes data from the Manu and Los Amigos river basins (Hint: use \texttt{\%in\%})
 \item Edit this data frame again so that it is sorted by increasing Calcium levels.
-\item Create a new column called Sum\_Ca\_Mg that is the sum of the calcium and magnesium columns.
+\item Create a new column called \texttt{Sum\_Ca\_Mg} that is the sum of the calcium and magnesium columns.
 
 
 \end{enumerate}
@@ -544,7 +531,7 @@ One of \boldblue{R}'s most powerful tools is its ability to produce publication 
 
 
 
-It is feasible to do anything you require in base graphics, but common actions are not straightforward, including legends, faceting, error bars and customisations of the plot area. Base graphics for quick data exploration, but for everything else we recommend the graphics library \texttt{ggplot2}.
+It is feasible to do anything you require in base graphics, but common actions are not straightforward, including legends, faceting, error bars and customisations of the plot area. Base graphics for quick data exploration, but for everything else we recommend the graphics library \code{ggplot2}.
 
 \subsection{\texttt{ggplot2} - the grammar of graphics.}
 
@@ -633,14 +620,14 @@ As you can see, this automatically adds a legend to the plot for the different h
 	\begin{tabular}{cl}
 		
 		Function & What it does \\ \hline
-		\code{labs()} & Customise the labels associated with aes() \\
+		\code{labs()} & Customise the labels associated with \texttt{aes()} \\
 		              & e.g. \texttt{labs(x = "Ca", y = "Mg", col = "Habitat Type")} \\ \hline
 		\code{scale\_x\_continuous()} & Change the scale of the axes \\
 		\code{scale\_y\_continuous()} & e.g. \texttt{scale\_x\_continuous(breaks =} \\
 		                              & \hspace*{1cm}\texttt{seq(from = 0, to = 2500, by = 250))} \\ \hline
 		\code{facet\_wrap()} & Facet the plot by a discrete variable \\
 		                  & e.g. \texttt{facet\_wrap($\sim$Habitat)} \\  \hline
-		\code{scale\_colour\_manual} & Example of one of many ways to define colours \\
+		\code{scale\_colour\_manual()} & Example of one of many ways to define colours \\
 		                           & e.g. \texttt{scale\_colour\_manual(values = c("red", "blue"))} \\ \hline
 		\code{theme()} & Formatting options for axes, plot area, etc. \\
 		               & e.g. \texttt{theme(legend.position = "top")} \\
@@ -683,7 +670,7 @@ Plots can be saved to file using \code{ggsave()}. It defaults to saving the last
 \begin{shaded}
 \begin{Schunk}
 \begin{Sinput}
-> ggsave("Habitat_Ca_MG.png")
+> ggsave("figs/Habitat_Ca_Mg.png")
 \end{Sinput}
 \end{Schunk}
 \end{shaded}
@@ -693,7 +680,8 @@ Other specifications can be made, such as plot height, width, resolution and so 
 \begin{shaded}
 \begin{Schunk}
 \begin{Sinput}
-> ggsave("Habitat_Ca_Mg.png", width = 12, height = 8, units = "cm", dpi = 300)
+> ggsave("figs/Habitat_Ca_Mg.png",
+         width = 12, height = 8, units = "cm", dpi = 300)
 \end{Sinput}
 \end{Schunk}
 \end{shaded}
@@ -716,26 +704,6 @@ Other specifications can be made, such as plot height, width, resolution and so 
 \end{enumerate}
 \end{minipage}}
 {.}\\\\
-% Feeling adventurous? Draw a map in \boldblue{R}:
-% 
-% \begin{shaded}
-% <<>>=
-% library(ggplot2)
-% library(ggthemes)
-% library(maps)
-% 
-% ggplot(data, aes(x = longitude, y = latitude)) +
-%     borders("world", colour = "black", fill = "gray80") +
-%     theme_map()
-% 
-% @
-% \end{shaded}
-
-
-
-%-----------------------------------
-%\section{Writing a Report}.
-%-----------------------------------
 
 
 \end{document}
