@@ -1,4 +1,4 @@
-# Intro_to_R
+# Using R as a Research Tool: Part 1
 
 The repository contains information for the course **Using R as a Research Tool** for the NERC E4 DTP at the University of Edinburgh.
 
